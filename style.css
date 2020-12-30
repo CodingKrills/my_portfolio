@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body,
+html,
+.dropdown-menu {
+  background-color: #222b31;
+}
+
+.bg-theme {
+  background-color: #222b31;
+  color: #ffffff;
+}
+
+.card {
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border: 0.02px solid #007ced;
+  box-shadow: 0 0 15px #007ced !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/* nav */
+
+nav {
+  text-transform: uppercase;
+}
+
+.nav-item {
+  padding: 1em 1em;
+}
+
+.navbar-inverse {
+  border-bottom: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 1) 29%,
+    rgba(56, 56, 56, 0.9864320728291317) 52%,
+    rgba(92, 92, 92, 0.9248074229691877) 81%,
+    rgba(139, 139, 139, 0.6643032212885154) 99%
+  );
+  background: #222b31 !important;
+  border-bottom: 4px solid !important;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .nav-link {
+    flex-direction: row;
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease;
+  padding: 30px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #007ced;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+a:hover {
+  color: #007ced;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  background-color: #007ced;
+  color: aliceblue;
+}
+
+.hero {
+  height: 100vh;
+  padding: 9em 0;
+}
+
+h1,
+h4,
+h6 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+/* bg */
+.bg-glow {
+  border-radius: 50%;
+  box-shadow: inset 0 0 70px #41a3ff, inset 30px 0 100px #41a3ff,
+    inset -20px 0 100px #41a3ff, inset 20px 0 600px #41a3ff,
+    inset -20px 0 300px #41a3ff, 0 0 10px, -5px 0 40px #41a3ff,
+    5px 0 40px #41a3ff;
+}
