@@ -75,7 +75,7 @@ nav {
   }
 }
 
-a {
+/* a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -97,7 +97,7 @@ a::after {
   bottom: 0;
   transform: translateX(-50%);
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-}
+} */
 
 a:hover {
   color: #007ced;
@@ -113,8 +113,14 @@ a:hover::after {
 }
 
 .hero {
-  height: 100vh;
   padding: 9em 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    height: 100vh;
+    padding: 9em 0;
+  }
 }
 
 h1,
@@ -144,7 +150,7 @@ code {
   font: inherit;
 }
 
-/* bg */
+/* bg  */
 .bg-glow {
   transition: transform 1s;
   border-radius: 50%;
